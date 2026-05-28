@@ -1,0 +1,9 @@
+int->float,complex,str,bool
+float->int,complex,str,bool
+complex->str
+str=>
+list->
+tuple->
+set->
+dict->
+bool->
