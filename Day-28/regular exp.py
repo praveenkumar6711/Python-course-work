@@ -1,0 +1,142 @@
+'''
+import re
+
+pattern = r'h.t\b'
+
+text="hot hit hrt h$t hate hoart heart"
+res=re.findall(pattern,text)
+print(res)
+
+'''
+['hot', 'hit', 'hrt', 'h$t']
+
+'''
+r'h.t' . is any char ->hot hit hrt h$t
+r'^c'  ^ is start
+r'$g' ->end of string -> ing programming
+r'ab*' ->a ab abbb abbbb
+r'ab+'-> ab abb abbbb
+r'to?' -> too to tot
+
+r'[a-zA-Z0-9].-> a b cb ABC 099
+r'[aeiou]' -> aeioupen
+r'[#@&*!]'-> # $ &
+
+
+#r'xx\.gmail.com'
+r'[10]'-> 9876543210
+r'[2,8]'->9876 98765
+r'{5,}'->123456789
+
+r'(the)'
+r'(ae)'
+
+r'0|1'
+
+
+
+import re
+
+pattern = r'j$'
+
+text="hot hit hrt h$t hate hoart heart hjt h$t"
+res=re.findall(pattern,text)
+print(res)
+
+[]
+
+
+
+import re
+
+pattern = r'to?\b'
+
+text='too to t tooooooooo toooooooo'
+
+res=re.findall(pattern,text)
+print(res)
+
+
+
+['to', 't']
+
+
+
+
+import re
+
+pattern = r'[a-z]{4,5}'
+
+text='serdsdgn fksdjnk dkfgjh dfsmbneds dsfgnkjdbn'
+
+res=re.findall(pattern,text)
+print(res)
+
+
+['serds', 'fksdj', 'dkfgj', 'dfsmb', 'neds', 'dsfgn', 'kjdbn']
+
+
+'''
+
+import re
+pattern = r'^[a-zA-Z]{2,15}( [a-zA-Z]{2,15})+$'
+
+text = input("Enter the text:: ")
+
+res = re.fullmatch(pattern,text)
+print("Valid format" if res else "Invalid Format")
+
+
+Enter the text:: fdjghikfdh
+Invalid Format
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
